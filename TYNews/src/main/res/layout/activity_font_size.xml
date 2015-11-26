@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/view_navigation_bar" />
+
+    <RadioGroup
+        android:id="@+id/rgFontSize"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/rbLarge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/font_large"
+            android:button="@null"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:checked="true"
+            android:drawableRight="@drawable/font_size_selector"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/view_line_size"
+            android:background="@color/line_bg" />
+
+        <RadioButton
+            android:id="@+id/rbBig"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/font_big"
+            android:button="@null"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:drawableRight="@drawable/font_size_selector"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/view_line_size"
+            android:background="@color/line_bg" />
+
+        <RadioButton
+            android:id="@+id/rbMiddle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/font_middle"
+            android:button="@null"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:drawableRight="@drawable/font_size_selector"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/view_line_size"
+            android:background="@color/line_bg" />
+
+        <RadioButton
+            android:id="@+id/rbSmall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/font_small"
+            android:button="@null"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:drawableRight="@drawable/font_size_selector"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/view_line_size"
+            android:background="@color/line_bg" />
+    </RadioGroup>
+</LinearLayout>

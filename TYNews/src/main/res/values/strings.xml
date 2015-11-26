@@ -1,0 +1,99 @@
+<resources>
+    <string name="app_name">太原日报</string>
+
+    <string name="weather_addr">太原</string>
+
+    <!--我-->
+    <string name="me_data">我的资料</string>
+    <string name="me_collect">我的收藏</string>
+    <string name="me_down">我的下载</string>
+    <string name="me_comment">我的评论</string>
+    <string name="me_message">我的消息</string>
+    <string name="me_invite">邀请好友</string>
+    <string name="me_score">积分: %s</string>
+    <string name="me_login">登录/注册</string>
+    <string name="me_recode">重新获取%s</string>
+
+    <!--登录注册-->
+    <string name="user_name">请输入手机号</string>
+    <string name="user_passwd">请输入密码</string>
+    <string name="user_forget">忘记密码</string>
+    <string name="user_login">登录</string>
+    <string name="user_code">请输入验证码</string>
+    <string name="user_nick">请输入您的昵称</string>
+    <string name="user_repasswd">请再次输入密码</string>
+    <string name="user_regist">注册</string>
+    <string name="user_getCode">获取验证码</string>
+
+    <string name="search_cancel">取消</string>
+    <string name="search_clean">清除历史记录</string>
+    <string name="seatch_resultCategory">要闻</string>
+    <string name="seatch_resultComment">20</string>
+
+    <string name="column_order">拖动排序</string>
+    <string name="column_add">点击添加栏目</string>
+
+    <string name="government_city">市区县市</string>
+    <string name="government_orgen">市局机关</string>
+
+    <string name="mine_nosign">点击签到</string>
+    <string name="mine_signed">今日已签到</string>
+
+    <string name="setting_fontSize">正文字号</string>
+    <string name="setting_newsPush">新闻推送</string>
+    <string name="setting_loadImage">仅在wifi模式下加载图片</string>
+    <string name="setting_nightMode">夜间模式</string>
+    <string name="setting_cleatCache">清除缓存</string>
+    <string name="setting_feedback">意见反馈</string>
+    <string name="setting_updateVer">检测更新</string>
+    <string name="setting_verNum">V1.4.1</string>
+    <string name="setting_aboutMe">关于我们</string>
+    <string name="setting_logout">退出登录</string>
+
+    <string name="font_large">超大字体</string>
+    <string name="font_big">大号字体</string>
+    <string name="font_middle">中号字体</string>
+    <string name="font_small">小号字体</string>
+
+    <string name="collection_del">删除</string>
+
+    <string name="help_title">温馨提示</string>
+    <string name="help_content">\t\t\t\t1. 所有太原日报APP注册用户都可以报料;\n\n\t\t\t\t2. 您看到的新闻事、有趣事都可以告诉我们，我们对有价值的新闻线索第一时间进行报道;\n\n
+        \t\t\t\t3. 井盖丢失、垃圾乱扔乱放、小贩占道经营&#8230;您看到城市管理方面的问题，可以通过"城市管理我当家"栏目告诉我们和"12319"城管热线，我们一定以最快的速度给您反馈;
+        \n\n\t\t\t\t4. 您需要反映问题或是政策咨询，可以选择发布舆情监督信息给我们，我们会及时了解并给您解答;\n\n\t\t\t\t5. 您通过太原日报APP可以享受到这样的便利但您得保证提交内容的真实性;\n\n\t\t\t\t6. 为了给您及时反馈信息，您提供新闻线索或者反映问题，得留下联系方式，方便我们与您联系。
+        您放心，您的信息只有少数工作人员才能看到, 绝对不会泄漏出去;\n\n\t\t\t\t7. 提供重要线索并被采纳的用户，还有机会获得不同的奖励，健身卡、电影票、篮球票、话费充值卡在等着您哦。</string>
+
+    <string name="about_introduction">太原介绍: \n传递太原信息 · 助力龙城发展 · 传递太原信息 · 助力龙城发展 · 传递太原信息 · 助力龙城发展 · 传递太原信息 · 助力龙城发展</string>
+    <string name="about_title">传递太原信息 · 助力龙城发展</string>
+    <string name="about_content">官网 | 微博</string>
+    <string name="about_website">tyrb.tynews.com.cn</string>
+    <string name="about_company">太原日报报业集团</string>
+    <string name="voice_clue">新闻线索</string>
+    <string name="voice_manager">全民城管</string>
+    <string name="voice_control">舆论监督</string>
+    <string name="manager_name">请输入您的姓名</string>
+    <string name="manager_phone">请输入您的联系电话</string>
+    <string name="manager_time">请输入您报料的时间</string>
+    <string name="manager_addr">请输入您报料的地点</string>
+    <string name="manager_title">请输入您报料的标题</string>
+    <string name="manager_content">请输入您报料的内容</string>
+    <string name="manager_image">点击上传图片</string>
+
+    <string name="info_nick">请输入您的昵称</string>
+    <string name="info_real">请输入您的真实姓名</string>
+    <string name="info_age">请输入您的年龄</string>
+    <string name="info_phone">请输入您的电话</string>
+    <string name="info_sex">请选择您的性别</string>
+    <string name="info_work">请输入您的工作单位</string>
+    <string name="info_home">请输入您的住址</string>
+
+    <string name="choose_sexM">男</string>
+    <string name="choose_sexF">女</string>
+    <string name="choose_sexS">保密</string>
+    <string name="voice_content">报料内容 :</string>
+    <string name="voice_result">处理结果</string>
+
+    <string name="feedbcak_phone">请输入您的联系电话</string>
+    <string name="feedbcak_title">请输入您反馈的标题</string>
+    <string name="feedbcak_content">请输入您反馈的内容</string>
+</resources>

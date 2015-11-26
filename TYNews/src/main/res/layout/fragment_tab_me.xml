@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:id="@+id/svContent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_color_transparent"
+    android:fadingEdge="none"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#E7E7E7"
+        android:orientation="vertical">
+
+        <include layout="@layout/view_navigation_bar" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:background="@color/navi_default_bg"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <com.news.views.MyCircleImageView
+                android:id="@+id/cvHead"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:src="@mipmap/user_default_head" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/llLogin"
+                    android:visibility="gone"
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_horizontal"
+                        android:textColor="@color/common_color_white"
+                        android:textSize="20sp" />
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tvScore"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:textColor="#FFFF90"
+                            android:textSize="20sp" />
+
+                        <ImageView
+                            android:id="@+id/ivKnow"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="10dp"
+                            android:layout_toRightOf="@+id/tvScore"
+                            android:src="@mipmap/know_more" />
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/tvSign"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="4dp"
+                        android:background="@drawable/mine_sign_bg"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:minWidth="90dp"
+                        android:padding="5dp"
+                        android:text="@string/mine_nosign"
+                        android:textColor="@color/mine_sign_selector" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llUnLogin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_centerHorizontal="true"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tvLogin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="4dp"
+                        android:background="@drawable/mine_sign_bg"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:textColor="@color/common_color_white"
+                        android:layout_marginRight="10dp"
+                        android:minWidth="50dp"
+                        android:padding="5dp"
+                        android:textSize="18sp"
+                        android:text="@string/user_login" />
+
+                    <TextView
+                        android:id="@+id/tvRegist"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="4dp"
+                        android:background="@drawable/mine_sign_bg"
+                        android:button="@null"
+                        android:textSize="18sp"
+                        android:gravity="center"
+                        android:layout_marginLeft="10dp"
+                        android:minWidth="50dp"
+                        android:padding="5dp"
+                        android:textColor="@color/common_color_white"
+                        android:text="@string/user_regist" />
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/ivAdvert"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY" />
+
+        <TextView
+            android:id="@+id/tvData"
+            style="@style/me_item"
+            android:drawableLeft="@mipmap/me_data"
+            android:text="@string/me_data" />
+
+        <include layout="@layout/view_line_horizontal" />
+
+        <TextView
+            android:id="@+id/tvCollect"
+            style="@style/me_item"
+            android:drawableLeft="@mipmap/me_collect"
+            android:text="@string/me_collect" />
+
+        <include layout="@layout/view_line_horizontal" />
+
+        <TextView
+            android:id="@+id/tvDown"
+            style="@style/me_item"
+            android:drawableLeft="@mipmap/me_down"
+            android:text="@string/me_down" />
+
+        <include layout="@layout/view_line_horizontal" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tvComment"
+                style="@style/me_item"
+                android:drawableLeft="@mipmap/me_comment"
+                android:text="@string/me_comment" />
+
+            <View
+                android:id="@+id/viewComment"
+                android:layout_width="8dp"
+                android:layout_height="8dp"
+                android:layout_marginLeft="120dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/red_dot_view" />
+        </RelativeLayout>
+
+        <include layout="@layout/view_line_horizontal" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tvMessage"
+                style="@style/me_item"
+                android:drawableLeft="@mipmap/me_message"
+                android:text="@string/me_message" />
+
+            <View
+                android:id="@+id/viewMessage"
+                android:layout_width="8dp"
+                android:layout_height="8dp"
+                android:layout_marginLeft="120dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/red_dot_view" />
+        </RelativeLayout>
+
+        <include layout="@layout/view_line_horizontal" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp">
+
+            <include layout="@layout/view_line_horizontal" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvInvite"
+            style="@style/me_item_noarrow"
+            android:drawableLeft="@mipmap/me_invite"
+            android:text="@string/me_invite" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp">
+
+            <include layout="@layout/view_line_horizontal" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

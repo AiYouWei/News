@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F6F6F6"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/view_navigation_bar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/etName"
+            android:layout_width="match_parent"
+            style="@style/user_edit_name"
+            android:drawableLeft="@mipmap/user_phone"
+            android:hint="@string/user_name" />
+
+        <include layout="@layout/view_line_horizontal" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/etPasswd"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                style="@style/user_edit_passwd"
+                android:drawableLeft="@mipmap/user_passwd"
+                android:hint="@string/user_passwd" />
+
+            <Button
+                android:id="@+id/btnForget"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/user_button_selector"
+                android:padding="8dp"
+                android:drawablePadding="5dp"
+                android:textColor="#888888"
+                android:text="@string/user_forget" />
+        </LinearLayout>
+
+        <include layout="@layout/view_line_horizontal" />
+
+        <Button
+            android:id="@+id/btnLogin"
+            style="@style/user_btn"
+            android:text="@string/user_login" />
+
+    </LinearLayout>
+</LinearLayout>

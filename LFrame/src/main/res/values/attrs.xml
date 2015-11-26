@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 圆形或圆角图片View -->
+    <declare-styleable name="CircularView">
+        <attr name="border" format="boolean" />
+        <attr name="border_color" format="color" />
+        <attr name="border_width" format="dimension" />
+        <attr name="selector" format="boolean" />
+        <attr name="selector_color" format="color" />
+        <attr name="selector_stroke_color" format="color" />
+        <attr name="selector_stroke_width" format="dimension" />
+        <attr name="shadow" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="CircularViewTheme">
+        <attr name="circularStyle" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="ViewPagerIndicator">
+        <attr name="vpiTabPageIndicatorStyle" format="reference" />
+    </declare-styleable>
+</resources>

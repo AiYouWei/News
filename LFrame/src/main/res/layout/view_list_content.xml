@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<org.androidx.frames.views.XListView
+    android:id="@+id/xlvContent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_color_transparent"
+    android:cacheColorHint="@color/common_color_transparent"
+    android:clickable="true"
+    android:divider="@color/common_color_transparent"
+    android:dividerHeight="0dp"
+    android:fadeScrollbars="false"
+    android:scrollbars="none"
+    android:fastScrollEnabled="false"
+    android:listSelector="@color/common_color_transparent" />

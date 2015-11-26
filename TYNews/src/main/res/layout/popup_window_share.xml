@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#80000000"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvWXFriend"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="7dp"
+                android:layout_weight="1"
+                android:drawablePadding="5dp"
+                android:drawableTop="@mipmap/wxfriend"
+                android:gravity="center"
+                android:text="微信"
+                android:textColor="@color/common_color_white"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tvWXGroup"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="7dp"
+                android:layout_weight="1"
+                android:drawablePadding="5dp"
+                android:drawableTop="@mipmap/wxgroup"
+                android:gravity="center"
+                android:text="朋友圈"
+                android:textColor="@color/common_color_white"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tvQQ"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="7dp"
+                android:layout_weight="1"
+                android:drawablePadding="5dp"
+                android:drawableTop="@mipmap/qq"
+                android:gravity="center"
+                android:text="QQ"
+                android:textColor="@color/common_color_white"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tvQZone"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="7dp"
+                android:layout_weight="1"
+                android:drawablePadding="5dp"
+                android:drawableTop="@mipmap/qzone"
+                android:gravity="center"
+                android:text="QQ空间"
+                android:textColor="@color/common_color_white"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvSinaWeibo"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="7dp"
+                android:layout_weight="1"
+                android:drawablePadding="5dp"
+                android:drawableTop="@mipmap/sinaweibo"
+                android:gravity="center"
+                android:text="新浪微博"
+                android:textColor="@color/common_color_white"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tvMessage"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="7dp"
+                android:layout_weight="1"
+                android:drawablePadding="5dp"
+                android:drawableTop="@mipmap/message"
+                android:gravity="center"
+                android:text="短信"
+                android:textColor="@color/common_color_white"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="7dp"
+                android:layout_weight="2"
+                android:drawablePadding="5dp"
+                android:enabled="false"
+                android:gravity="center"
+                android:textColor="@color/common_color_white"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvCancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:background="@color/navi_default_bg"
+            android:gravity="center_horizontal"
+            android:padding="10dp"
+            android:text="取消"
+            android:textColor="@color/common_color_white"
+            android:textSize="20sp" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <View
+        android:id="@+id/viewSlider"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <RadioGroup
+        android:id="@+id/rgTags"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/slider_tabs_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rbTag1"
+            style="@style/slide_tag" />
+
+        <RadioButton
+            android:id="@+id/rbTag2"
+            style="@style/slide_tag" />
+
+        <RadioButton
+            android:id="@+id/rbTag3"
+            style="@style/slide_tag" />
+    </RadioGroup>
+</RelativeLayout>

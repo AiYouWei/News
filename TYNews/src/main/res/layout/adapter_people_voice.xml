@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/list_item_selector"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/ivContent"
+            android:layout_width="100dp"
+            android:layout_height="70dp"
+            android:layout_centerVertical="true"
+            android:scaleType="fitXY" />
+
+        <TextView
+            android:id="@+id/tvContent"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:gravity="center_vertical"
+            android:layout_toRightOf="@+id/ivContent"
+            android:maxLines="2"
+            android:textColor="@color/common_color_black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tvCategory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/tvContent"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/news_category_bg"
+            android:padding="4dp"
+            android:textColor="@color/navi_default_bg" />
+
+    </RelativeLayout>
+
+    <include layout="@layout/view_line_horizontal" />
+</LinearLayout>

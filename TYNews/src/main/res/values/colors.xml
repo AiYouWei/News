@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--Tab文字颜色-->
+    <color name="tab_text_n">#888888</color>
+    <color name="tab_text_p">#BC1413</color>
+
+    <!-- 文字默认颜色-->
+    <color name="text_default">#585858</color>
+    <color name="item_normal">#FFFFFF</color>
+    <color name="item_pressed">#44ACACAC</color>
+    <color name="sign_no">#FFFFFF</color>
+    <color name="sign_yes">#ACACAC</color>
+</resources>

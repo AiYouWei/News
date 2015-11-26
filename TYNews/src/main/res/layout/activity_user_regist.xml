@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F6F6F6"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/view_navigation_bar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/etNick"
+            style="@style/user_edit_code"
+            android:layout_width="match_parent"
+            android:drawableLeft="@mipmap/user_nick"
+            android:hint="@string/user_nick" />
+
+        <include layout="@layout/view_line_horizontal" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/etName"
+                style="@style/user_edit_name"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:drawableLeft="@mipmap/user_phone"
+                android:hint="@string/user_name" />
+
+            <Button
+                android:id="@+id/btnGetCode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/user_button_selector"
+                android:padding="5dp"
+                android:minWidth="100dp"
+                android:text="@string/user_getCode"
+                android:textColor="#888888" />
+        </LinearLayout>
+
+        <include layout="@layout/view_line_horizontal" />
+
+        <EditText
+            android:id="@+id/etCode"
+            style="@style/user_edit_code"
+            android:layout_width="match_parent"
+            android:drawableLeft="@mipmap/user_phone"
+            android:hint="@string/user_code" />
+
+        <include layout="@layout/view_line_horizontal" />
+
+        <EditText
+            android:id="@+id/etPasswd"
+            style="@style/user_edit_passwd"
+            android:layout_width="match_parent"
+            android:drawableLeft="@mipmap/user_passwd"
+            android:hint="@string/user_passwd" />
+
+        <include layout="@layout/view_line_horizontal" />
+
+        <EditText
+            android:id="@+id/etRepasswd"
+            style="@style/user_edit_passwd"
+            android:layout_width="match_parent"
+            android:drawableLeft="@mipmap/user_passwd"
+            android:hint="@string/user_repasswd" />
+
+        <include layout="@layout/view_line_horizontal" />
+
+        <Button
+            android:id="@+id/btnRegist"
+            style="@style/user_btn"
+            android:text="@string/user_regist" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,75 @@
+<resources>
+
+    <style name="AppTheme" parent="BaseAppTheme"></style>
+
+    <style name="me_item_noarrow">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">15dp</item>
+        <item name="android:drawablePadding">5dp</item>
+        <item name="android:textColor">@color/common_color_black</item>
+        <item name="android:textSize">@dimen/text_size_xlarge</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:background">@drawable/me_item_selector</item>
+    </style>
+
+    <style name="me_item" parent="me_item_noarrow">
+        <item name="android:drawableRight">@mipmap/arrow_right</item>
+    </style>
+
+    <style name="user_edit">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingTop">15dp</item>
+        <item name="android:paddingBottom">15dp</item>
+        <item name="android:textSize">@dimen/text_size_xlarge</item>
+        <item name="android:textColorHint">#888888</item>
+        <item name="android:textColor">@color/common_color_black</item>
+        <item name="android:background">@color/common_color_transparent</item>
+        <item name="android:drawablePadding">10dp</item>
+        <item name="android:paddingLeft">5dp</item>
+        <item name="android:paddingRight">5dp</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="user_edit_name" parent="user_edit">
+        <item name="android:inputType">phone</item>
+    </style>
+
+    <style name="user_edit_passwd" parent="user_edit">
+        <item name="android:inputType">textPassword</item>
+    </style>
+
+    <style name="user_edit_code" parent="user_edit">
+        <item name="android:inputType">text</item>
+    </style>
+
+    <style name="user_btn">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">20dp</item>
+        <item name="android:background">@drawable/user_button_selector</item>
+        <item name="android:padding">15dp</item>
+        <item name="android:textColor">@color/navi_default_bg</item>
+        <item name="android:textSize">@dimen/text_size_xlarge</item>
+    </style>
+
+    <style name="slide_tag">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:background">@drawable/navi_check_selector</item>
+        <item name="android:button">@null</item>
+        <item name="android:paddingBottom">5dp</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:textColor">@drawable/navi_text_selector</item>
+    </style>
+
+    <style name="top_category_scroll_view_item_text">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:gravity">center</item>
+    </style>
+</resources>

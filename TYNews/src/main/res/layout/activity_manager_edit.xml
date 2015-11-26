@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F7F7F7"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/view_navigation_bar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/etName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/common_color_white"
+                android:drawableLeft="@mipmap/user_name"
+                android:drawablePadding="10dp"
+                android:hint="@string/manager_name"
+                android:inputType="none"
+                android:padding="15dp"
+                android:textColor="@color/common_color_black"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/etPhone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/common_color_white"
+                android:drawableLeft="@mipmap/userinfo_phone"
+                android:drawablePadding="10dp"
+                android:hint="@string/manager_phone"
+                android:inputType="phone"
+                android:padding="15dp"
+                android:textColor="@color/common_color_black"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/etTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/common_color_white"
+                android:drawableLeft="@mipmap/publish_data"
+                android:drawablePadding="10dp"
+                android:hint="@string/manager_time"
+                android:inputType="none"
+                android:padding="15dp"
+                android:textColor="@color/common_color_black"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/etAddr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/common_color_white"
+                android:drawableLeft="@mipmap/user_addr"
+                android:drawablePadding="10dp"
+                android:hint="@string/manager_addr"
+                android:inputType="none"
+                android:padding="15dp"
+                android:textColor="@color/common_color_black"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/etTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/common_color_white"
+                android:hint="@string/manager_title"
+                android:inputType="none"
+                android:paddingBottom="15dp"
+                android:paddingLeft="55dp"
+                android:paddingRight="0dp"
+                android:paddingTop="15dp"
+                android:textColor="@color/common_color_black"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvContent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/common_color_white"
+                    android:hint="@string/manager_content"
+                    android:inputType="none"
+                    android:paddingBottom="15dp"
+                    android:paddingLeft="55dp"
+                    android:paddingRight="0dp"
+                    android:paddingTop="15dp"
+                    android:textColor="@color/common_color_black"
+                    android:textSize="16sp" />
+
+                <include layout="@layout/view_line_horizontal" />
+
+                <EditText
+                    android:id="@+id/etContent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/common_color_white"
+                    android:gravity="top|left"
+                    android:inputType="none"
+                    android:maxLines="4"
+                    android:minLines="4"
+                    android:paddingBottom="15dp"
+                    android:paddingLeft="55dp"
+                    android:paddingRight="0dp"
+                    android:paddingTop="15dp"
+                    android:textColor="@color/common_color_black"
+                    android:textSize="16sp" />
+
+                <include layout="@layout/view_line_horizontal" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/common_color_white"
+                android:paddingBottom="10dp">
+
+                <EditText
+                    android:id="@+id/etImage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:background="@color/common_color_white"
+                    android:drawableLeft="@mipmap/user_name"
+                    android:drawablePadding="10dp"
+                    android:enabled="false"
+                    android:focusable="false"
+                    android:hint="@string/manager_image"
+                    android:inputType="none"
+                    android:padding="15dp"
+                    android:textColor="@color/common_color_black"
+                    android:textSize="16sp" />
+
+                <RelativeLayout
+                    android:id="@+id/rlImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/ivImage"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="15dp"
+                android:background="@color/common_color_white"
+                android:padding="10dp"
+                android:scaleType="centerCrop"
+                android:layout_gravity="center_horizontal"
+                android:visibility="gone" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

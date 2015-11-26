@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vpContent"
+        android:layout_width="match_parent"
+        android:layout_height="170dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_alignParentBottom="true"
+        android:background="#4D000000"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <RadioGroup
+            android:id="@+id/rgGuide"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="right|center_vertical"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@id/banner_rb_1"
+                android:layout_width="6dp"
+                android:layout_height="6dp"
+                android:checked="true"
+                android:gravity="center"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:button="@drawable/banner_indicator_selector" />
+
+            <RadioButton
+                android:id="@id/banner_rb_2"
+                android:layout_width="6dp"
+                android:layout_height="6dp"
+                android:gravity="center"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:button="@drawable/banner_indicator_selector" />
+
+            <RadioButton
+                android:id="@id/banner_rb_3"
+                android:layout_width="6dp"
+                android:layout_height="6dp"
+                android:gravity="center"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:button="@drawable/banner_indicator_selector" />
+
+            <RadioButton
+                android:id="@id/banner_rb_4"
+                android:layout_width="6dp"
+                android:layout_height="6dp"
+                android:gravity="center"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:button="@drawable/banner_indicator_selector" />
+
+            <RadioButton
+                android:id="@id/banner_rb_5"
+                android:layout_width="6dp"
+                android:layout_height="6dp"
+                android:gravity="center"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:button="@drawable/banner_indicator_selector" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/tvDesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:singleLine="true"
+            android:layout_toLeftOf="@+id/rgGuide"
+            android:layout_alignParentLeft="true"
+            android:layout_marginRight="5dp"
+            android:textColor="@color/common_color_white"
+            android:textSize="16sp" />
+    </RelativeLayout>
+</RelativeLayout>

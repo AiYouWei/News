@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F7F7F7"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/view_navigation_bar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/etPhone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/common_color_white"
+                android:drawableLeft="@mipmap/userinfo_phone"
+                android:drawablePadding="10dp"
+                android:hint="@string/feedbcak_phone"
+                android:inputType="phone"
+                android:padding="15dp"
+                android:textColor="@color/common_color_black"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/etTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/common_color_white"
+                android:hint="@string/feedbcak_title"
+                android:inputType="none"
+                android:paddingBottom="15dp"
+                android:paddingLeft="55dp"
+                android:paddingRight="0dp"
+                android:paddingTop="15dp"
+                android:textColor="@color/common_color_black"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/common_color_white"
+                    android:hint="@string/feedbcak_content"
+                    android:inputType="none"
+                    android:paddingBottom="15dp"
+                    android:paddingLeft="55dp"
+                    android:paddingRight="0dp"
+                    android:paddingTop="15dp"
+                    android:textColor="@color/common_color_black"
+                    android:textSize="16sp" />
+
+                <include layout="@layout/view_line_horizontal" />
+
+                <EditText
+                    android:id="@+id/etContent"
+                    android:gravity="left|top"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/common_color_white"
+                    android:inputType="none"
+                    android:maxLines="4"
+                    android:minLines="4"
+                    android:paddingBottom="15dp"
+                    android:paddingLeft="55dp"
+                    android:paddingRight="0dp"
+                    android:paddingTop="10dp"
+                    android:textColor="@color/common_color_black"
+                    android:textSize="16sp" />
+
+                <include layout="@layout/view_line_horizontal" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

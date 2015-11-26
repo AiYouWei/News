@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--HTTP请求时，返回的code-->
+    <string name="resonse_code">error_code</string>
+    <!--HTTP请求时，返回的错误信息-->
+    <string name="resonse_msg">error_msg</string>
+    <!--HTTP请求时，成功信息的标识-->
+    <string name="resonse_success">0</string>
+
+    <!--图片缓存目录缓存-->
+    <string name="image_cache">/TYNews/image/</string>
+
+    <!--跳转URI的前缀，用来标识URI属于APP-->
+    <string name="app_uri_prefix">frame</string>
+    <!-- 默认标题栏背景颜色 -->
+    <color name="navi_default_bg">#BC1413</color>
+    <!--标题栏的高度-->
+    <dimen name="navi_default_height">40dp</dimen>
+    <!--标题栏左边和右边的字体大小-->
+    <dimen name="navi_side_text">16sp</dimen>
+    <!--标题栏中间的字体大小-->
+    <dimen name="navi_middle_text">18sp</dimen>
+    <!--标题栏文字颜色-->
+    <color name="navi_text_color">#FFFFFF</color>
+
+</resources>
